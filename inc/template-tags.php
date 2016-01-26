@@ -20,7 +20,7 @@ function eighties_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'eighties' ); ?></h1>
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'eighties' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
@@ -51,7 +51,7 @@ function eighties_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'eighties' ); ?></h1>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'eighties' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', _x( '%title', 'Previous post link', 'eighties' ) );
