@@ -2561,6 +2561,15 @@ a:active {
   display: block;
   font-weight: bold;
 }
+@media screen and (max-width: 760px) {
+  #respond .comment-form p label {
+    height: 90px;
+  }
+
+  #respond .required {
+    top: 72px;
+  }
+}
 #respond .comment-form-author {
   float: left;
   width: 33.3333333%;
