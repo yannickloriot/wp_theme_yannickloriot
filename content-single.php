@@ -22,7 +22,13 @@
 			<span class="entry-meta entry-meta-categories"><?php echo $categories_list; ?></span>
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<p class="entry-meta entry-meta-time"><i class="fa fa-clock-o"></i><?php echo eighties_get_time_difference( get_the_date( 'Y-m-d H:i:s' ) ); ?></p>
+		<p class="entry-meta entry-meta-time">
+			<i class="fa fa-clock-o"></i><time class="updated" datetime="<?php echo the_modified_time( 'Y-m-d H:i:s' ); ?>"><?php echo eighties_get_time_difference( get_the_date( 'Y-m-d H:i:s' ) ); ?></time>
+			by
+			<span class="vcard author">
+				<span class="post-author author"><?php echo the_author_posts_link();?></span>
+			</span>
+		</p>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
