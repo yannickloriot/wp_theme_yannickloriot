@@ -46,7 +46,9 @@
 			<header id="masthead" class="site-header" role="banner">
 				<a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php if ( is_home() || is_front_page() ) { echo "<h1 class=\"site-title\">"; } else { echo "<div class=\"site-title\">"; } ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<?php if ( is_home() || is_front_page() ) { echo "</h1>"; } else { echo "</div>"; } ?>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 					<nav class="site-social-nav">
 						<a href="https://github.com/yannickl" alt="Github" class="github"><i class="fa fa-github"></i></span></a>
