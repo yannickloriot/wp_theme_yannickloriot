@@ -20,6 +20,15 @@
 
 		echo "<meta name=\"description\" content=\"$tagline\"/>";
 	}
+	else {
+
+		$post = get_post();
+    setup_postdata( $post );
+    $excerpt = get_the_excerpt();
+    wp_reset_postdata();
+
+		echo "<meta name=\"description\" content=\"$excerpt\"/>";
+	}
 	?>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
