@@ -21,10 +21,10 @@
 		echo "<meta name=\"description\" content=\"$tagline\"/>";
 	}
 	else {
-
 		$post = get_post();
     setup_postdata( $post );
     $excerpt = get_the_excerpt();
+		$excerpt = (strlen($excerpt) > 155) ? substr($excerpt,0, 152).'...' : $excerpt;
     wp_reset_postdata();
 
 		echo "<meta name=\"description\" content=\"$excerpt\"/>";
