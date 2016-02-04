@@ -292,6 +292,9 @@ h6 {
 p {
   margin-bottom: 2em;
 }
+pre + p {
+  margin-top: 2em;
+}
 b,
 strong {
   font-weight: bold;
