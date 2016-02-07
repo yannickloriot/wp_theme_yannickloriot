@@ -380,6 +380,9 @@ big {
   font-size: 20px;
   font-size: 1.1111111111111112rem;
 }
+code {
+  font-family: monospace, serif;
+}
 /** -----------------------------------------------------:[ 3.0 - Elements ]:---------- */
 hr {
   background-color: #ececec;
