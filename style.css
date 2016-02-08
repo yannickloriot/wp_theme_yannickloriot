@@ -2611,6 +2611,7 @@ a:active {
 #respond .form-submit {
   float: right;
   margin-bottom: 0;
+  z-index: 1;
 }
 #respond .form-submit input {
   cursor: pointer;
