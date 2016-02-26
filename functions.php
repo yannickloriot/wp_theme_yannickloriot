@@ -296,6 +296,14 @@ function eighties_admin_fonts() {
 }
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'eighties_admin_fonts' );
 
+// Pick out the version number from scripts and styles
+function wp_remove_script_version( $src )
+{
+    return remove_query_arg( 'ver', $src );
+}
+add_filter( 'script_loader_src', 'wp_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'wp_remove_script_version', 15, 1 );
+
 /**
  * Implement the Custom Header feature.
  */
