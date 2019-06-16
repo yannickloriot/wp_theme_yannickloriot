@@ -62,7 +62,7 @@
 					<nav class="site-social-nav">
 						<a href="https://github.com/yannickl" alt="Github" class="github"><i class="fa fa-github"></i></span></a>
 						<a href="https://twitter.com/yannickloriot" alt="Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
-						<a href="https://plus.google.com/u/0/+YannickLoriot" alt="Google+" class="googleplus"><i class="fa fa-google-plus"></i></a>
+						<a href="https://stackoverflow.com/users/261062/yannick-loriot" alt="Stackoverflow" class="stackoverflow"><i class="fab fa-stack-overflow"></i></a>
 						<a href="https://www.linkedin.com/in/yannickloriot" alt="LinkedIn" class="linkedin"><i class="fa fa-linkedin"></i></a>
 						<a href="http://yannickloriot.com/rss" alt="Rss Feed" class="rss"><i class="fa fa-rss"></i></span></a>
 					</nav>
